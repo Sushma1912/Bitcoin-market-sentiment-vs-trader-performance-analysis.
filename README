@@ -1,0 +1,109 @@
+# Bitcoin Market Sentiment vs Trader Performance Analysis
+
+## Overview
+
+This project explores the relationship between Bitcoin market sentiment and trader performance using:
+
+1. Bitcoin Fear & Greed Index Dataset
+2. Hyperliquid Historical Trading Dataset
+
+The objective is to identify how market psychology affects trader profitability and uncover actionable trading insights.
+
+---
+
+## Datasets
+
+### Bitcoin Fear & Greed Index
+Features:
+- Date
+- Classification
+    - Extreme Fear
+    - Fear
+    - Neutral
+    - Greed
+    - Extreme Greed
+
+### Hyperliquid Historical Trader Data
+Features:
+- Account
+- Symbol
+- Side
+- Size USD
+- Execution Price
+- Closed PnL
+- Leverage
+- Timestamp
+
+---
+
+## Methodology
+
+### Data Cleaning
+- Removed invalid records
+- Converted timestamps
+- Standardized dates
+
+### Data Integration
+- Merged trader records with sentiment data using date
+
+### Exploratory Analysis
+- Average PnL
+- Win Rate
+- Trading Volume
+- Buy vs Sell Performance
+- Top Trader Analysis
+
+---
+
+## Key Findings
+
+### 1. Fear Markets Generated Highest Total Profits
+
+Fear periods produced the largest cumulative trader profits.
+
+### 2. Greed Markets Generated Highest Average PnL
+
+Average profit per trade was highest during Greed.
+
+### 3. Contrarian Strategies Outperformed
+
+SELL trades significantly outperformed BUY trades during Greed periods.
+
+### 4. Traders Increased Risk During Emotional Markets
+
+Position sizes increased during Fear and Extreme Greed.
+
+### 5. Profit Distribution Was Highly Concentrated
+
+A small group of traders generated most profits.
+
+---
+
+## Visualizations
+
+- Average PnL by Sentiment
+- Win Rate by Sentiment
+- Buy vs Sell Comparison
+- Trading Volume Analysis
+- Top Trader Performance
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+## Project Structure
+
+```text
+data/
+images/
+notebooks/
+reports/
